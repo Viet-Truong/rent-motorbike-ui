@@ -1,0 +1,32 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container{
+    width: var(--default-layout-admin-width);
+    max-width: 100%;
+    padding-right: var(--default-layout-horizontal-spacer);
+    min-height: 100vh;
+    display: flex;
+}
+
+.content{
+    flex: 1;
+    margin-right: 16px;
+    margin-left: 16px;
+    width: var(--default-layout-width);
+    max-width: var(--default-layout-width);
+    padding: 24px 0;
+    position: relative;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container{
+        overflow-y: hidden;
+    }
+}
+
