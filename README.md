@@ -1,86 +1,31 @@
-<h1 align="center"> RENT MOTORBIKE ECOMMERCE </h1>
+# React + TypeScript + Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Live demo: [https://rent-moto-ui.vercel.app/](https://rent-moto-ui.vercel.app/)
+Currently, two official plugins are available:
 
-# Technology And Programing Language
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
--   JavaScript
--   Create React App
--   MDBoostraps 5
--   SASS
--   Restful API
--   Redux
+## Expanding the ESLint configuration
 
-# API
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
--   API: [https://github.com/Viet-Truong/backend_rentmoto.git](https://github.com/Viet-Truong/backend_rentmoto.git)
+- Configure the top-level `parserOptions` property like this:
 
-# Features
-
--   Auth(Register, Login, Logout)
-
-*   Customer
-
-1.  Search motorbike
-2.  CRUD cart
-3.  Register rent motorbike
-4.  Cancel rent motorbike
-
--   ADMIN
-
-1.  Manager Account
-2.  Update infomation Motorbike
-3.  Update profile
-
--   Employee
-
-1.  Update profile
-2.  Accept register rent motorbike
-3.  Confirm return motorbike
-
-## How to run project
-
-### Step 1: Clone project
-
-In the project directory, you can run:
-
-### Step 2: Install node_module.
-
-```bash
-npm install
-```
-### Step 3: Access
-
-```bash
-https://github.com/Viet-Truong/backend_rentmoto.git
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
 ```
 
-Clone project and follow the instructions in the readme file.
-
-### Step 4: Run project
-
-```bash
-npm start
-```
-
-Open [http://localhost:6868](http://localhost:6868) to view it in your browser.
-Open [http://localhost:6868/admin](http://localhost:6868/admin) to view ADMIN page.
-
-### Account
-
-<details>
-    <summary><strong>Admin account:</strong></summary>
-    <p>Account: viettruong</p>
-    <p>Password: vt123</p>
-</details>
-
-<details>
-    <summary><strong>Employee account:</strong></summary>
-    <p>Account: vt_nv</p>
-    <p>Password: vt123</p>
-</details>
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+"# rent-motorbike-ui" 

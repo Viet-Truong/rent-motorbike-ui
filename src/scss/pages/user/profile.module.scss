@@ -1,0 +1,48 @@
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.wrapper_info {
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  margin: 16px 30px;
+  flex-direction: column;
+  gap: 16px;
+  width: 200px;
+
+  .upload_avatar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: var(--primary);
+  }
+}
+
+.image {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.information {
+  color: var(--gray-color);
+  width: calc(80vw - 200px - 30px);
+
+  p {
+    margin-bottom: 16px;
+
+    span {
+      text-align: center;
+    }
+  }
+}

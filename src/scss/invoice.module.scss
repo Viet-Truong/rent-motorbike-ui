@@ -1,0 +1,94 @@
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+
+  :global {
+    .ant-qrcode {
+      width: 100px !important;
+      height: 100px !important;
+      border: none;
+    }
+  }
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_content {
+    .title {
+      text-align: center;
+    }
+
+    .information {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      font-size: 14px;
+
+      &_shop {
+        max-width: 40%;
+      }
+
+      &_customer {
+        text-align: left;
+      }
+    }
+
+    .date {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .total_price {
+      text-align: right;
+      margin: 24px 0;
+    }
+  }
+  .note {
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+    margin: 20px 0;
+  }
+}
+
+.background {
+  background: #ccc;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.print {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  df-messenger {
+    display: none !important;
+  }
+
+  .wrapper,
+  .wrapper * {
+    visibility: visible;
+  }
+
+  .wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

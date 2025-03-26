@@ -1,0 +1,123 @@
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.wrapper_shop {
+  padding: 10px;
+
+  .shop_header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .shop_name {
+      h4 {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.wrapper_motorbike_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.wrapper_images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: 20px;
+}
+
+.wrapper_main_image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  padding: 4px;
+}
+
+.main_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.child_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.child_image {
+  height: 30rem;
+  width: 40rem;
+  border-radius: 0.375rem;
+  object-fit: cover;
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.motorbike_info {
+  margin-left: 10vw;
+  max-width: 35vw;
+
+  .name {
+    color: var(--primary);
+  }
+
+  .description {
+    margin: 4px 0;
+    color: var(--gray-color);
+  }
+  .condition {
+    margin: 4px 0;
+    color: var(--gray-color);
+  }
+
+  .price {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: var(--gray-color);
+  }
+
+  .btn_options {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.suggest {
+  display: flex;
+  overflow-x: hidden;
+  max-width: 90vw;
+  padding: 20px 20px 0 20px;
+  gap: 60px;
+
+  > div {
+    margin-right: 20px;
+  }
+}
+
+.action {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 678px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .child_images {
+    overflow-x: scroll;
+  }
+}

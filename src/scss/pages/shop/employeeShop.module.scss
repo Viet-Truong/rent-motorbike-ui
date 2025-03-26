@@ -1,0 +1,11 @@
+.wrapper {
+  max-height: calc(100vh - 64px);
+  overflow-y: scroll;
+
+  .search {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

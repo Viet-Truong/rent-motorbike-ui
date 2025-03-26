@@ -1,0 +1,15 @@
+.wrapper {
+  padding: 8px 24px;
+  border-bottom: 1px solid #f0f0f0;
+
+  .wrapper_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+}

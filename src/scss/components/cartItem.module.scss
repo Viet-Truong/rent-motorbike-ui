@@ -1,0 +1,43 @@
+.RangePicker {
+  width: 300px !important;
+}
+
+.cart_item {
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  padding-bottom: 20px;
+}
+
+.header_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.image {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
+.delete {
+  cursor: pointer;
+  span {
+    font-size: 20px;
+  }
+}
+
+.total {
+  margin: 8px 0;
+}
+
+.payment {
+  margin: 8px 0;
+}
